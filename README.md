@@ -21,7 +21,7 @@ sudo apt-get install ruby-full
 ruby -v
 ```
 
-### Running
+### Execute
 
 ```
 ruby ruby.rb
