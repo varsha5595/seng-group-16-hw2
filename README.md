@@ -3,7 +3,7 @@ CSC510 Software Engineering Homework-2
 
 ## Getting Started
 
-These instructions will get you to set the project up and running on your local machine for development and testing. 
+These instructions will help you in setting up the project and running the game on your local machine for development and testing. 
 
 ## Ruby
 
