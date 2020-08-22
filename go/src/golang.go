@@ -3,8 +3,9 @@ import (
 	"fmt"
 	"math/rand"
 	"time"
+	"log"
 	"os"
-	"os/exec"
+
 )
 
 func life(rows int, cols int, some float64, generations int) {
@@ -26,8 +27,7 @@ func live(a []int, r int, gen int) int {
 		return 0
 	}
 	sleep()
-	homeScreen()
-	fmt.Println("Generation ", gen)
+	fmt.Println("\n \n Generation ", gen)
 	for c:=0; c < len(a); c++ {
 		if a[c] == 1 {
 			fmt.Print("o")
@@ -62,18 +62,18 @@ func sleep() {
 	time.Sleep(1)
 }
 
-func homeScreen() {
-	fmt.Print("")
-}
-
-func clearScreen() {
-	cmd := exec.Command("cmd", "/c", "cls")
-	cmd.Stdout = os.Stdout
-    cmd.Run()
-}
-
 func main() {
+	file, err := os.OpenFile("Attempts", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+	if err != nil {
+		log.Panic(err)
+	}
+	defer file.Close()
+	log.SetOutput(file)
+
+	log.Println("The Game of Life begins!")
+
 	sleep()
-	clearScreen()
-	life(50, 20, 0.619, 200)
+	life(50, 20, 0.4, 3)
+
+	log.Println("Successfully compiled!")
 }
