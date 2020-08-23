@@ -3,13 +3,13 @@ matrix:
     - language: ruby
       ruby: 2.7.1
       script:
-        - test/test_sample_ruby
+        - ruby -I test test/test_sample_ruby
     - language: go
       go: 1.15
       script:
-        - testing
+        - go test
     - language: rust
       rust: 1.45.2
       script:
-        - test
+        - cargo test
       
