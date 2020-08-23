@@ -3,7 +3,7 @@ matrix:
     - language: ruby
       ruby: 2.7.1
       script:
-        - ruby -I test test/test_sample_ruby.rs
+        - ruby -I test test/test_sample_ruby.rb
     - language: go
       go: 1.15
       script:
