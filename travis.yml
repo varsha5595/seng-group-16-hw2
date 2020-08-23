@@ -1,0 +1,15 @@
+matrix:
+  include:
+    - language: ruby
+      ruby: 2.7.1
+      script:
+        - test/unit
+    - language: go
+      go: 1.15
+      script:
+        - testing
+    - language: rust
+      rust: 1.45.2
+      script:
+        - test
+      
