@@ -9,16 +9,23 @@ These instructions will help you in setting up the project and running the game 
 
 ### Ruby
 
-
-MacOS
+#### MacOS
 ```
 brew install ruby
 ruby -v
 ```
 
-Ubuntu
+#### Linux
 ```
 sudo apt-get install ruby-full
+ruby -v
+```
+
+#### Windows
+Download the installation file from https://www.ruby-lang.org/en/downloads/
+Add the following lines to your c:\autoexec.bat: set PATH = "D:\(ruby install directory)\bin;%PATH%"
+
+```
 ruby -v
 ```
 
@@ -74,6 +81,40 @@ Copy the path of the ```seng-group-16-hw2``` project folder. Now set the ```GOPA
 
 Note that, GOPATH must be different than the path of your Go installation.
 
+
+### Rust
+
+#### MacOS 
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+rustc --version
+cargo --version
+```
+
+#### Linux
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+rustc --version
+cargo --version
+```
+
+#### Windows
+
+Setup Rust with the following executable file https://static.rust-lang.org/rustup/dist/i686-pc-windows-msvc/rustup-init.exe
+
+Once you open it, you’ll be met with the installer options. Type "Y" and let the installer do a set of downloads
+
+Add the following to PATH in environment variables
+```
+%USERPROFILE%\.cargo\bin
+```
+Check the installation with the following
+```
+rustc --version
+cargo --version
+```
 ## Execution
 
 ### Ruby
@@ -87,6 +128,13 @@ ruby ruby.rb
 cd go/src
 go run golang.go
 ```
+
+### Rust
+```
+rustc rust.rs
+./rust
+```
+
 ## Authors
 
 * Adithya Raghu Ganesh
