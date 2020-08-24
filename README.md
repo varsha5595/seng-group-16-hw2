@@ -54,6 +54,9 @@ For setting GOPATH in bash shells, add the following line to the ~/.bash_profile
 
 ```
 export GOPATH=$HOME/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
 ```
 
 If you use Zsh shell, then you need to add the above line to ~/.zshrc file.
