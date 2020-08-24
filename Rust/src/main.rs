@@ -19,7 +19,7 @@ fn print_colony(col: &Colony, width: i32, height: i32) {
 fn neighbours(&(x,y): &Cell) -> Vec<Cell> {
     vec![
         (x-1,y-1), (x,y-1), (x+1,y-1),
-        (x-1,y),            (x+1,y),
+        (x-1,y-1),          (x+1,y+1),
         (x-1,y+1), (x,y+1), (x+1,y+1),
     ]
 }
@@ -46,7 +46,7 @@ fn generation(col: Colony) -> Colony {
  
 fn life(init: Vec<Cell>, iters: i32, width: i32, height: i32) {
     let mut col: Colony = init.into_iter().collect(); 
-    for i in 0..iters+1
+    for i in 0..iters
     {
         println!("({})", &i);
         if i != 0 {

@@ -60,7 +60,7 @@ def fate(board, i, j, n)
    sum = 0
    for ii in (i1..i2)
       for jj in (j1..j2)
-         sum += board[ii][jj] if not (ii == i and jj == j)
+         sum = board[jj][ii] if not (ii == i and jj == j)
       end
    end
    (sum == 3 or (sum == 2 and board[i][j] == 1)) ? 1 : 0
