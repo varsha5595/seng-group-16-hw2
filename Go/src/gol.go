@@ -1,11 +1,11 @@
 package main
+
 import (
 	"fmt"
 	"math/rand"
 	"time"
 	"log"
 	"os"
-
 )
 
 func life(rows int, cols int, some float64, generations int) {
@@ -38,7 +38,7 @@ func live(a []int, r int, gen int) int {
 			fmt.Println()
 		}
 	}
-	for c:=52; c < 949; c++ {
+	for c:=52; c < len(a) - 51; c++ {
 		neighbors = a[c-1] + a[c+1] + a[c-r-1] + a[c-r] + a[c-r+1] + a[c+r-1] + a[c+r] + a[c+51]
 		b[c] = a[c]
 		if a[c] == 0 {
@@ -48,7 +48,7 @@ func live(a []int, r int, gen int) int {
 				b[c] = 0
 			}
 		} else {
-			if neighbors == 2 || neighbors == 3 {
+			if neighbors == 2 || neighbors == 3 { 
 				b[c] = 1
 			} else {
 				b[c] = 0
