@@ -11,5 +11,7 @@ matrix:
     - language: rust
       rust: 1.45.2
       script:
-        - cargo test --verbose
+        - cargo build
+        - cd src
+        - cargo test
       
