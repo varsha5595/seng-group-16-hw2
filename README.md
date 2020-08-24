@@ -12,6 +12,10 @@
 
 </p>
 
+## Activity Guide
+
+The script to guide subjects through the 30 minute debbuging activity can be found [here](https://docs.google.com/document/d/1zKUuImrUjdBml-M98DmDxT1D55K0_9uHUnpG33YVfSQ/edit?usp=sharing).
+
 ## Getting Started
 
 These instructions will help you in setting up the project and running the game on your local machine for development and testing. 
@@ -142,7 +146,7 @@ go run golang.go
 
 ### Rust
 ```
-cargo build
+cd Rust && cargo build
 cd src
 cargo test
 ```
