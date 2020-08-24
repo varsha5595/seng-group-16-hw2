@@ -131,8 +131,9 @@ go run golang.go
 
 ### Rust
 ```
-rustc rust.rs
-./rust
+cargo build
+cd src
+cargo test
 ```
 
 ## Authors
