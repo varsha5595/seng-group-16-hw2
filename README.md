@@ -135,13 +135,13 @@ cargo --version
 ### Ruby
 
 ```
-ruby ruby.rb
+ruby gol.rb
 ```
 
 ### Golang
 ```
-cd go/src
-go run golang.go
+cd Go/src
+go run gol.go
 ```
 
 ### Rust
