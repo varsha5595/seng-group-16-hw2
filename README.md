@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/language-ruby-red.svg">&nbsp;
     <img src="https://img.shields.io/badge/language-rust-yellow.svg">&nbsp; 
     <a href="https://travis-ci.com/github/varsha5595/seng-group-16-hw2">
-        <img src="https://travis-ci.com/github/varsha5595/seng-group-16-hw2" />
+        <img src="https://travis-ci.com/varsha5595/seng-group-16-hw2.svg?branch=master" />
     </a>&nbsp;
     <a href="https://zenodo.org/badge/latestdoi/288862234">
         <img src="https://zenodo.org/badge/288862234.svg" alt="DOI">
