@@ -38,7 +38,7 @@ func live(a []int, r int, gen int) int {
 			fmt.Println()
 		}
 	}
-	for c:=52; c < len(a) - 51; c++ {
+	for c:=52; c <= len(a) - 51; c++ {
 		neighbors = a[c-1] + a[c+1] + a[c-r-1] + a[c-r] + a[c-r+1] + a[c+r-1] + a[c+r] + a[c+51]
 		b[c] = a[c]
 		if a[c] == 0 {
