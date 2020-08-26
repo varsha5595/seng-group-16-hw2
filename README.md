@@ -122,6 +122,9 @@ Setup Rust with the following executable file https://static.rust-lang.org/rustu
 Once you open it, you’ll be met with the installer options. Type "Y" and let the installer do a set of downloads
 
 Add the following to PATH in environment variables
+
+Ensure that you have Visual C++ installed.
+If errors persist while running building, run the following executable file https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16
 ```
 %USERPROFILE%\.cargo\bin
 ```
@@ -149,6 +152,7 @@ go run gol.go
 cd Rust && cargo build
 cd src
 cargo test
+cargo run
 ```
 
 ## Authors
