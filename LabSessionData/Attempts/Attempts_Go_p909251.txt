@@ -1,0 +1,8 @@
+2020/08/26 14:57:39 The Game of Life begins!
+2020/08/26 14:58:26 The Game of Life begins!
+2020/08/26 14:59:06 The Game of Life begins!
+2020/08/26 15:01:41 The Game of Life begins!
+2020/08/26 15:02:13 The Game of Life begins!
+2020/08/26 15:02:26 The Game of Life begins!
+2020/08/26 15:02:46 The Game of Life begins!
+2020/08/26 15:02:46 Successfully compiled!
