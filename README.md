@@ -6,9 +6,10 @@
     <a href="https://travis-ci.com/github/varsha5595/seng-group-16-hw2">
         <img src="https://travis-ci.com/varsha5595/seng-group-16-hw2.svg?branch=master" />
     </a>&nbsp;
-    <a href="https://doi.org/10.5281/zenodo.3997356">
-        <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3997356.svg" alt="DOI">
+    <a href="https://doi.org/10.5281/zenodo.4012231">
+        <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4012231.svg" alt="DOI">
     </a>
+
 
 </p>
 
